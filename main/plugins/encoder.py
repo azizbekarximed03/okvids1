@@ -55,8 +55,8 @@ async def encode(event, msg, scale=0):
         ext = (n.split("."))[1]
         out = new_name + ext
     DT = time.time()
-    log = await LOG_START(event, f'**{_ps} PROCESS STARTED**\n\n[Bot is busy now]({SUPPORT_LINK})')
-    log_end_text = f'**{_ps} PROCESS FINISHED**\n\n[Bot is free now]({SUPPORT_LINK})'
+    log = await LOG_START(event, f'**{_ps} PROCESS STARTED**\n\n')
+    log_end_text = f'**{_ps} PROCESS FINISHED**\n\n'
     try:
         await fast_download(n, file, Drone, edit, DT, "**DOWNLOADING:**")
     except Exception as e:
