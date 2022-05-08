@@ -27,9 +27,9 @@ help_text = """**v1.4**
 
 •`Trim` - cut your videos"""
 
-source_text = "**t.me/Azizbek_03**"
+source_text = "http://t.me/Azizbek_03"
 
-DEV = "https://t.me/lfraganus"
+DEV = "http://t.me/lfraganus"
 
 spam_notice = "Spamga ban :)"
 
