@@ -59,7 +59,7 @@ async def compress(event, msg, ffmpeg_cmd=0, ps_name=None):
     if ps_name != "**COMPRESSING:**":
         _ps = "ENCODE"
     log = await LOG_START(event, f'**{str(_ps)} PROCESS STARTED**\n\n')
-    log_end_text = f'**{_ps} PROCESS FINISHED**\n\n[Bot is free now]({SUPPORT_LINK})'
+    log_end_text = f'**{_ps} PROCESS FINISHED**\n\n'
     try:
         await fast_download(n, file, Drone, edit, DT, "**DOWNLOADING:**")
     except Exception as e:
